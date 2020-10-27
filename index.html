@@ -8,7 +8,7 @@
 					grid-area: demo;
 					position: sticky;
 					top: 0;
-					height: 100vh;
+					height: 70vh;
 					flex: 1;
 					display: flex;
 					justify-content: center;
@@ -106,18 +106,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Startseite <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-      </ul>
-      <form class="form-inline mt-2 mt-md-0">
-        <input class="form-control mr-sm-2" type="text" placeholder="Suchen" aria-label="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Suchen</button>
-      </form>
     </div>
   </nav>
 <main role="main" class="flex-shrink-0">
@@ -130,9 +118,6 @@
 			<div class="col-md-12">
 			<div id="demo-container" class="demo">
 				<model-viewer ar auto-rotate camera-controls ios-src="assets/Astronaut.usdz" src="EllwangenAllBilder_simplified_3d_mesh.glb" alt="A 3D model of an astronaut" loading="eager" poster="LogoVM.png">
-					<button slot="ar-button" style="background-color: white; border-radius: 4px; border: none; position: absolute; top: 16px; right: 16px; ">
-						👋 Activate AR
-					</button>
 					<button onclick = "addselectedClass(this)" class="hotspot" slot="hotspot-hand" data-position="-0.012273869358361373m 0.011796619126840813m -0.03491619367693151m" data-normal="0.5885414891487963m 0.10934903202157983m 0.8010378922038963m">
 						<div class="annotation">
 							Das Hauptportal auf der Südseite
