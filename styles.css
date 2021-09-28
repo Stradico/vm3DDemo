@@ -63,7 +63,7 @@ button[slot="hotspot-foot"]:not([data-visible]) {
 }
 
 .annotation{
-    background-color: #ca3b56d1;
+    background-color: #ac5363d1;
     position: absolute;
     transform: translate(10px, 10px);
     border-radius: 5px;
@@ -82,3 +82,13 @@ button[slot="hotspot-foot"]:not([data-visible]) {
 .hotspot.selected {
     background-color: red;
 }
+
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+
+
+  

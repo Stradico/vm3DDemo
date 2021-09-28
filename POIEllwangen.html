@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css" >
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+			   
+		<link rel="manifest" href="manifest.json">
+		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+			<script>  
+				function addselectedClass(elmnt) { 
+					if (elmnt.classList.contains("selected")) {
+						elmnt.classList.remove("selected");				
+					}
+					else {
+						var hotspots = document.getElementsByClassName("hotspot");
+						var i;
+						for (i = 0; i < hotspots.length; i++) {
+							hotspots[i].classList.remove("selected")
+						} 
+						elmnt.classList.add("selected"); 
+					}
+				} 
+			</script>  
+		<title>Modell Ellwanger Marktplatz</title>
+	</head>
+<body>
+	<nav>
+		<div class="nav-wrapper brown">
+			<a class="brand-logo" href="#">
+				<img src="stradico-logo.png" height="30" alt="">  Ellwangen und seine Sehenswürdigkeiten
+			</a>
+		  <ul id="nav-mobile" class="right hide-on-med-and-down">
+			<li><a class="nav-link" href="index.html">Home</a> </li>
+			<li class="active"><a class="nav-link" href="model1.html">Model1 <span class="sr-only">(current)</span></a></li>
+		  </ul>
+		</div>
+	  </nav>
+
+
+	
+<main role="main" class="flex-shrink-0">
+	<div class="container">
+
+		<div class="row">
+			<div class="col s12 m12">
+				<div class="card">
+				<div class="card-image">
+					<div id="demo-container" class="demo">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="kirche.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="Logostradico.PNG">
+							<button onclick = "addselectedClass(this)" class="hotspot" slot="hotspot-foot" data-position="-0.011285910450124382m 0.012784915581909487m -0.035001530126625394m" data-normal="-0.04860438095806531m -0.4078992491916432m 0.9117323163410282m">
+								<div class="annotation">
+									Die Außenfassade wird mitgeprägt durch fünf unversehrt erhaltene Rundbogenportale, die den Eintritt in die Basilika ermöglichen.
+								</div>
+							</button>
+							
+							<div id="annotation">Ellwangen - Basilika</div>
+						</model-viewer>
+					</div>
+					<span class="card-title black-text">Ellwangen Basilika</span>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="col s12 m4">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.558345259676!2d10.129727115905565!3d48.96189500136685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e3aae99e7199%3A0xf10775d82f1e668a!2sBasilika%20St.%20Vitus!5e0!3m2!1sen!2sde!4v1632838707892!5m2!1sen!2sde" style="border:5px;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						<div class="col s12 m8">
+							<p>Die Basilika St. Vitus (ehemalige Stiftskirche St. Vitus) Ellwangen ist ein spätromanischer Gewölbebau aus dem 13. Jahrhundert. Dieser das Stadtbild prägende Sakralbau dient seit der Säkularisation als katholische Pfarrkirche für die Kernstadt Ellwangen.</p>
+						</div>
+						<div class="col s12 m2">
+							<audio controls>
+								<source src="horse.ogg" type="audio/ogg">
+								<source src="horse.mp3" type="audio/mpeg">
+							  Your browser does not support the audio element.
+							  </audio>
+						</div>
+									
+					</div>
+						
+				</div>
+				<div class="card-action">
+					
+					<a href="https://de.wikipedia.org/wiki/Basilika_St._Vitus_(Ellwangen)">Weitere Informationen</a>
+				</div>
+				</div>
+			</div>	
+
+
+
+			<div class="col s12 m12">
+				<div class="card">
+				<div class="card-image">
+					<div id="demo-container" class="demo">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="bridgewithtree.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="Logostradico.PNG">
+							<button onclick = "addselectedClass(this)" class="hotspot" slot="hotspot-foot" data-position="0.02196289011151048m 0.009856421240644571m 0.00642606418230445m" data-normal="-0.10026913595176311m -3.0384513440581813e-7m 0.9949603511574694m">
+								<div class="annotation">
+									Aufzug zum LGS Gelände
+								</div>
+							</button>
+							
+							<div id="annotation">Ellwangen - Landesgartenschau 2026 Neue Bahnb&uumlberquerrung</div>
+						</model-viewer>
+					</div>
+					<span class="card-title black-text">Landesgartenschau 2026 Neue Bahnb&uumlberquerrung</span>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="col s12 m4">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.5923841333442!2d10.129008283889572!3d48.96124693689411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e2fffcfcf103%3A0x44abb53f1915a3f7!2sM%C3%BChlgraben%2C%2073479%20Ellwangen%20(Jagst)!5e0!3m2!1sen!2sde!4v1632838942822!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						<div class="col s12 m8">
+							<p>Das Landesgartenschau Gelände soll über diese neue Brücke mit der Ellwanger Innenstadt verbunden werden. Dieses Bauelement soll den Schießwasen näher an die Ellwanger Innenstadt bringen.</p>
+						</div>
+						<div class="col s12 m2">
+							<audio controls>
+								<source src="horse.ogg" type="audio/ogg">
+								<source src="horse.mp3" type="audio/mpeg">
+							  Your browser does not support the audio element.
+							  </audio>
+						</div>
+									
+					</div>
+						
+				</div>
+				<div class="card-action">
+					
+					<a href="https://de.wikipedia.org/wiki/Basilika_St._Vitus_(Ellwangen)">Weitere Informationen</a>
+				</div>
+				</div>
+			</div>
+			
+			
+		</div>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">stradico }}}* &copy 2021</span>
+  </div>
+</footer>
+
+</body>
+</html>
