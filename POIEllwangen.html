@@ -3,43 +3,34 @@
 	<head>
 		<link rel="stylesheet" href="styles.css" >
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-
-			   
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="manifest" href="manifest.json">
-		<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-		<!-- Compiled and minified JavaScript -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-		<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
-			<script>  
-				function addselectedClass(elmnt) { 
-					if (elmnt.classList.contains("selected")) {
-						elmnt.classList.remove("selected");				
-					}
-					else {
-						var hotspots = document.getElementsByClassName("hotspot");
-						var i;
-						for (i = 0; i < hotspots.length; i++) {
-							hotspots[i].classList.remove("selected")
-						} 
-						elmnt.classList.add("selected"); 
-					}
-				} 
-			</script>  
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		
 		<title>Modell Ellwanger Marktplatz</title>
 	</head>
 <body>
+
 	<nav>
 		<div class="nav-wrapper brown">
-			<a class="brand-logo" href="#">
-				<img src="stradico-logo.png" height="40" alt="">  Ellwangen und seine Sehensw&uumlrdigkeiten
-			</a>
+		  <a href="#!" class="brand-logo"><i class="material-icons">hive</i>LGS Ellwangen 2026</a>
+		  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		  <ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a class="nav-link" href="index.html">Home</a> </li>
-			<li class="active"><a class="nav-link" href="model1.html">Model1 <span class="sr-only">(current)</span></a></li>
+			<li class="active"><a class="nav-link" href="POIEllwangen.html">Sehensw&uumlrdigkeiten</a> </li>
+			<li><a class="nav-link" href="model1.html">Model1</span></a></li>
 		  </ul>
 		</div>
 	  </nav>
+	
+	  <ul class="sidenav" id="mobile-demo">
+		<li><a  href="index.html">Home</a> </li>		
+			<li  class="active"><a href="POIEllwangen.html">Sehensw&uumlrdigkeiten Ellwangen</a> </li>
+			<li><a href="index.html">Model1</a> </li>
+			<li><a href="model1.html">Model2</a></li>
+	  </ul>
+
 
 
 	
@@ -51,7 +42,7 @@
 				<div class="card">
 				<div class="card-image">
 					<div id="demo-container" class="demo">
-						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="kirche.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="Logostradico.PNG">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="kirche.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingBasilika.png">
 							<button onclick = "addselectedClass(this)" class="hotspot" slot="hotspot-foot" data-position="-0.011285910450124382m 0.012784915581909487m -0.035001530126625394m" data-normal="-0.04860438095806531m -0.4078992491916432m 0.9117323163410282m">
 								<div class="annotation">
 									Die Außenfassade wird mitgepr&aumlgt durch f&uumlnf unversehrt erhaltene Rundbogenportale, die den Eintritt in die Basilika erm&oumlglichen.
@@ -61,24 +52,24 @@
 							<div id="annotation">Ellwangen - Basilika</div>
 						</model-viewer>
 					</div>
-					<span class="card-title black-text">Ellwangen Basilika</span>
+					<span class="card-title black-text"><i class="material-icons">account_balance</i> Ellwangen Basilika</span>
 				</div>
 				<div class="card-content">
 					<div class="row">
-						<div class="col s12 m4">
+						<div class="col s12 m12 l4">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.558345259676!2d10.129727115905565!3d48.96189500136685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e3aae99e7199%3A0xf10775d82f1e668a!2sBasilika%20St.%20Vitus!5e0!3m2!1sen!2sde!4v1632838707892!5m2!1sen!2sde" style="border:5px;" allowfullscreen="" loading="lazy"></iframe>
 						</div>
-						<div class="col s12 m8">
+						<div class="col s12 m12 l8">
 							<p>Die Basilika St. Vitus (ehemalige Stiftskirche St. Vitus) Ellwangen ist ein sp&aumltromanischer Gew&oumllbebau aus dem 13. Jahrhundert. Dieser das Stadtbild pr&aumlgende Sakralbau dient seit der S&aumlkularisation als katholische Pfarrkirche f&uumlr die Kernstadt Ellwangen.</p>
 						</div>
-						<div class="col s12 m2">
+						<div class="col s12 m12 l2">
 							<audio controls>
 								<source src="horse.ogg" type="audio/ogg">
 								<source src="horse.mp3" type="audio/mpeg">
 							  Your browser does not support the audio element.
 							  </audio>
 						</div>
-									
+						
 					</div>
 						
 				</div>
@@ -95,17 +86,21 @@
 				<div class="card">
 				<div class="card-image">
 					<div id="demo-container" class="demo">
-						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="bridgewithtree.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="Logostradico.PNG">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="bridgewithtree.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingBridgeWithTrees.PNG">
 							<button onclick = "addselectedClass(this)" class="hotspot" slot="hotspot-foot" data-position="0.02196289011151048m 0.009856421240644571m 0.00642606418230445m" data-normal="-0.10026913595176311m -3.0384513440581813e-7m 0.9949603511574694m">
 								<div class="annotation">
 									Aufzug zum LGS Gel&aumlnde
 								</div>
 							</button>
+
+							<button slot="hotspot-dot+X-Y+Z" class="dot" data-position="-0.018962160430142743m 0.013058516826395247m -0.0066461517598189294m" data-normal="-0.10095734838944129m -3.0382061430265713e-7m 0.9948907547093203m"></button>
+  							<button slot="hotspot-dim+X-Y" class="dim" data-position="-0.01871272270594431m 0.007078026377885658m -0.006620841690237987m" data-normal="-0.10095734838944129m -3.0382061430265713e-7m 0.9948907547093203m">15m</button>
+  							<button slot="hotspot-dot+X-Y-Z" class="dot" data-position="-0.018723585159792153m 0.0012350040025893945m -0.006621945750922981m" data-normal="-0.10095734838944129m -3.0382061430265713e-7m 0.9948907547093203m"></button>
 							
 							<div id="annotation">Ellwangen - Landesgartenschau 2026 Neue Bahn&uumlberquerrung</div>
 						</model-viewer>
 					</div>
-					<span class="card-title black-text">Landesgartenschau 2026 Neue Bahn&uumlberquerrung</span>
+					<span class="card-title black-text"><i class="material-icons">build</i> Landesgartenschau 2026 Neue Bahn&uumlberquerrung</span>
 				</div>
 				<div class="card-content">
 					<div class="row">
@@ -133,6 +128,45 @@
 				</div>
 			</div>
 			
+
+
+			<div class="col s12 m12">
+				<div class="card">
+				<div class="card-image">
+					<div id="demo-container" class="demo">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="lgsbrueckelgsmitbruecke.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingLandWithBridge.png">
+				
+							<div id="annotation"> Landesgartenschau 2026 - Jugendzentrum }}}*</div>
+						</model-viewer>
+					</div>
+					<span class="card-title black-text"><i class="material-icons">build</i> Landesgartenschau 2026 Neue Bahn&uumlberquerrung in bestehender Landschaft</span>
+				</div>
+				<div class="card-content">
+					<div class="row">
+						<div class="col s12 m4">
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2619.5923841333442!2d10.129008283889572!3d48.96124693689411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4798e2fffcfcf103%3A0x44abb53f1915a3f7!2sM%C3%BChlgraben%2C%2073479%20Ellwangen%20(Jagst)!5e0!3m2!1sen!2sde!4v1632838942822!5m2!1sen!2sde" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+						</div>
+						<div class="col s12 m8">
+							<p>Das Landesgartenschau Gel&aumlnde soll &uumlber diese neue Br&uumlcke mit der Ellwanger Innenstadt verbunden werden. Dieses Bauelement soll den Schießwasen n&aumlher an die Ellwanger Innenstadt bringen.</p>
+						</div>
+						<div class="col s12 m2">
+							<audio controls>
+								<source src="horse.ogg" type="audio/ogg">
+								<source src="horse.mp3" type="audio/mpeg">
+							  Your browser does not support the audio element.
+							  </audio>
+						</div>
+									
+					</div>
+						
+				</div>
+				<div class="card-action">
+					
+					<a href="https://de.wikipedia.org/wiki/Basilika_St._Vitus_(Ellwangen)">Weitere Informationen</a>
+				</div>
+				</div>
+			</div>
+
 			
 		</div>
   </div>
@@ -145,4 +179,29 @@
 </footer>
 
 </body>
+
+<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+		<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<script>  
+	function addselectedClass(elmnt) { 
+		if (elmnt.classList.contains("selected")) {
+			elmnt.classList.remove("selected");				
+		}
+		else {
+			var hotspots = document.getElementsByClassName("hotspot");
+			var i;
+			for (i = 0; i < hotspots.length; i++) {
+				hotspots[i].classList.remove("selected")
+			} 
+			elmnt.classList.add("selected"); 
+		}
+	} 
+</script>  
+<script> 
+	$(document).ready(function(){
+		$('.sidenav').sidenav();
+	});
+</script>  
 </html>
