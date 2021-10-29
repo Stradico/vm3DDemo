@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  <!-- we import arjs version without NFT but with marker + location based support -->
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+  <body style="margin : 0px; overflow: hidden;">
+    <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'>
+      <a-marker type='barcode' value='6' size = "0.02">
+         <!-- Positon: Rechts  Z  Runter Rotation + -> GGUZ - -> UZ-->
+        <a-entity     
+          position="-0.6  0 1.4"
+          rotation="0 -34 0 "
+          scale="0.35 0.35 0.35"
+          gltf-model="bridgeonlyscaled.glb">
+        </a-entity>
+
+          <a-entity     
+          position="-0.5  0 0.9"
+          rotation="0 -33 0 "
+          scale="0.063 0.063 0.063"
+          gltf-model="ellwangenobjects.glb" >
+         </a-entity>
+
+         
+
+        <a-entity
+          position="-3 0 0.3 "
+          rotation="0 0 0 "
+          scale="0.055 0.055 0.055 "
+          gltf-model="tree.glb"
+          ></a-entity>
+
+          <a-entity
+          position="-2 0 1.4 "
+          rotation="0 0 0 "
+          scale="0.055 0.055 0.055 "
+          gltf-model="tree.glb"
+          ></a-entity>
+
+          <a-entity
+          position="1.8 0 1.8 "
+          rotation="0 0 0 "
+          scale="0.055 0.055 0.055 "
+          gltf-model="tree.glb"
+          ></a-entity>
+
+
+          <a-entity
+          position="2 0 1.2 "
+          rotation="0 0 0 "
+          scale="0.055 0.055 0.055 "
+          gltf-model="tree.glb"
+          ></a-entity>
+     
+      </a-marker>
+
+      
+
+     <!--  <a-marker type='barcode' value='7'>
+        <a-entity
+          position="0 0 0"
+          scale="30 30 30 "
+          gltf-model="kirche.glb"
+          size = "0.03"
+          ></a-entity>-->
+          
+      </a-marker>
+
+      <a-entity camera></a-entity>
+    </a-scene>
+  </body>
+</html>
+
+
