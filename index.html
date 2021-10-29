@@ -8,7 +8,7 @@
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		
-		<title>Ellwangen 3D</title>
+		<title>Modell Ellwanger Marktplatz</title>
 	</head>
 <body>
 
@@ -17,17 +17,18 @@
 		  <a href="#!" class="brand-logo"><i class="material-icons">hive</i>LGS Ellwangen 2026</a>
 		  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		  <ul id="nav-mobile" class="right hide-on-med-and-down">
-			<li class="active"><a class="nav-link" href="index.html">LGS Ellwangen</a> </li>
-			<li><a class="nav-link" href="qrcode.html">QR Anwednung</span></a></li>
+			<li><a class="nav-link" href="index.html">Home</a> </li>
+			<li class="active"><a class="nav-link" href="POIEllwangen.html">Sehensw&uumlrdigkeiten</a> </li>
+			<li><a class="nav-link" href="model1.html">Model1</span></a></li>
 		  </ul>
 		</div>
 	  </nav>
 	
 	  <ul class="sidenav" id="mobile-demo">
 		<li><a  href="index.html">Home</a> </li>		
-			<li  class="active"><a href="index.html">LGS Ellwangen</a> </li>
-			<li><a href="qrcode.html">QR Anwednung</a> </li>
-			
+			<li  class="active"><a href="POIEllwangen.html">Sehensw&uumlrdigkeiten Ellwangen</a> </li>
+			<li><a href="index.html">Model1</a> </li>
+			<li><a href="model1.html">Model2</a></li>
 	  </ul>
 
 
@@ -41,7 +42,7 @@
 				<div class="card">
 				<div class="card-image">
 					<div id="demo-container" class="demo">
-						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="kirche.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingBasilika.png">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="kirche.usdz" src="kirche.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingBasilika.png">
 							<button onclick = "addselectedClass(this)" class="hotspot" slot="hotspot-foot" data-position="-0.011285910450124382m 0.012784915581909487m -0.035001530126625394m" data-normal="-0.04860438095806531m -0.4078992491916432m 0.9117323163410282m">
 								<div class="annotation">
 									Die Außenfassade wird mitgepr&aumlgt durch f&uumlnf unversehrt erhaltene Rundbogenportale, die den Eintritt in die Basilika erm&oumlglichen.
@@ -85,7 +86,7 @@
 				<div class="card">
 				<div class="card-image">
 					<div id="demo-container" class="demo">
-						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="assets/Astronaut.usdz" src="complett scaled.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingBridgeWithTrees.PNG">
+						<model-viewer ar auto-rotate camera-controls min-field-of-view="5deg" ios-src="complett scaled.usdz" src="complett scaled.glb" alt="Ein 3D Modell von Ellwangen" loading="eager" poster="LazyLoadingBridgeWithTrees.PNG">
 							
 							<div id="annotation">Ellwangen - Landesgartenschau 2026 Neue Bahn&uumlberquerrung</div>
 						</model-viewer>
