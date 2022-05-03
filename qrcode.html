@@ -8,8 +8,8 @@
   </head>
   <body style="margin : 0px; overflow: hidden;">
     <a-scene embedded arjs='sourceType: webcam; debugUIEnabled: false; detectionMode: mono_and_matrix; matrixCodeType: 3x3;'  renderer='logarithmicDepthBuffer: true;'>
-      <a-marker type='barcode' value='6' size = "0.02">
-         <!-- Positon: Rechts  Z  Runter Rotation + -> GGUZ - -> UZ-->
+      <!-- <a-marker type='barcode' value='6' size = "0.02">
+          Positon: Rechts  Z  Runter Rotation + -> GGUZ - -> UZ
         <a-entity     
           position="-1.5 0 0"
           rotation="0 -34 0 "
@@ -17,7 +17,7 @@
           gltf-model="Brückenpark_fixedNormals.glb">
         </a-entity>
 
-          <!-- <a-entity     
+           <a-entity     
           position="-0.5  0 0.9"
           rotation="0 -33 0 "
           scale="0.063 0.063 0.063"
@@ -54,9 +54,39 @@
           scale="0.055 0.055 0.055 "
           gltf-model="tree.glb"
           ></a-entity>
-      -->
-      </a-marker>
+    
+      </a-marker>  -->
+      <a-marker type='barcode' value='0' size = "0.02">
+        <!-- Positon: Rechts  Z  Runter Rotation + -> GGUZ - -> UZ-->
+        <a-entity     
+          position="0 0 1"
+          rotation="0 0 0 "
+          scale="15 15 15"
+          gltf-model="kirche.glb">
+        </a-entity>
+     </a-marker>
 
+    </a-marker>
+    <a-marker type='barcode' value='1' size = "0.02">
+      <!-- Positon: Rechts  Z  Runter Rotation + -> GGUZ - -> UZ-->
+      <a-entity     
+        position="-1 0 0"
+        rotation="0 0 0 "
+        scale="0.015 0.015 0.015"
+        gltf-model="muehlgraben.glb">
+      </a-entity>
+   </a-marker>
+
+  </a-marker>
+  <a-marker type='barcode' value='2' size = "0.02">
+    <!-- Positon: Rechts  Z  Runter Rotation + -> GGUZ - -> UZ-->
+    <a-entity     
+      position="0 0 0"
+      rotation="0 0 0 "
+      scale="10 10 10"
+      gltf-model="complett scaled.glb">
+    </a-entity>
+ </a-marker>
       
 
      <!--  <a-marker type='barcode' value='7'>
